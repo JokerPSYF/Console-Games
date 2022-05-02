@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2VTdw0V91wKkTorPi3BklEI9sSbHjogefSPXdYgx/dAiUgPw7ucd9R1cVY6Ik6O0eaBOZlrpIzERVY1RSyDeew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\SnakeGame\\SimpleSnake\\SimpleSnake.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.24\\microsoft.netcore.app.runtime.win-x86.3.1.24.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.24\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.24.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.24\\microsoft.aspnetcore.app.runtime.win-x86.3.1.24.nupkg.sha512"
+  ],
+  "logs": []
+}

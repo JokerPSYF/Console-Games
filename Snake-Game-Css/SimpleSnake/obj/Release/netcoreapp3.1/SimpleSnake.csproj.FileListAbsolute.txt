@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.exe
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.deps.json
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.runtimeconfig.json
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.dll
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\bin\Release\netcoreapp3.1\SimpleSnake.pdb
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.AssemblyInfo.cs
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.dll
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.pdb
+C:\Users\Admin\source\repos\SnakeGame\SimpleSnake\obj\Release\netcoreapp3.1\SimpleSnake.genruntimeconfig.cache
