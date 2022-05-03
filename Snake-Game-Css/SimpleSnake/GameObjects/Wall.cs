@@ -4,7 +4,7 @@ namespace SimpleSnake.GameObjects
 {
     public class Wall : Point
     {
-        private const char wallSymbol = '\u25A0';
+        private const char wallSymbol = '\u2588';
 
         public Wall(int x, int y) : base(x, y)
         {

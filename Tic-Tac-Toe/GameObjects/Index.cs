@@ -5,34 +5,35 @@ namespace Tic_Tac_Toe.GameObjects
 {
     public class Index
     {
-        private int row;
-        private int col;
-
         public Index(int row, int col)
         {
-            this.row = row;
-            this.col = col;
+            this.Row = row;
+            this.Col = col;
         }
         
         public Index(string info)
         {
             int[] rowCol = info.Split(',', StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse).ToArray();
-            this.row = rowCol[0];
-            this.col = rowCol[1];
+            this.Row = rowCol[0];
+            this.Col = rowCol[1];
         }
+
+        public int Row { get; set; }
+
+        public int Col { get; set; }
 
         public override bool Equals(object obj)
         {
             Index otherIndex = obj as Index;
 
-            return this.row == otherIndex.row 
-                   && this.col == otherIndex.col;
+            return this.Row == otherIndex.Row 
+                   && this.Col == otherIndex.Col;
         }
 
         public override string ToString()
         {
-            return $"{this.row},{this.col}";
+            return $"{this.Row},{this.Col}";
         }
     }
 }

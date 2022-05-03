@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Tic_Tac_Toe
 {
@@ -6,7 +7,8 @@ namespace Tic_Tac_Toe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("Hello World! \u2588");
         }
     }
 }

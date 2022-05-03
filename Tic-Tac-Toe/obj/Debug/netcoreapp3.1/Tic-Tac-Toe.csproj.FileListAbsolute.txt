@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.exe
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.deps.json
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.runtimeconfig.json
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.dll
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\bin\Debug\netcoreapp3.1\Tic-Tac-Toe.pdb
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.dll
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.pdb
+C:\Users\Admin\source\repos\Console-Games\Tic-Tac-Toe\obj\Debug\netcoreapp3.1\Tic-Tac-Toe.genruntimeconfig.cache
