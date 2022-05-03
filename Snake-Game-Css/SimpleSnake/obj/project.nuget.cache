@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I4vg9o+zfQiCXJFMbtBrC+DuhHgqBVOJLI62FBPIdcM9WCtjRs51fRH135mZVmwn9vtrfB/ZbdcLplMkmJX+FQ==",
+  "dgSpecHash": "IpyzI1mkWCtvZX0korB/WKvehvPDiCdvY+Z3gQ1rWmK1uzJNq+Rs/IXb2bN0qeDs4ACaTGnfXYW0vfrKXO4Ciw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\SnakeGame\\SimpleSnake\\SimpleSnake.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Console-Games\\Snake-Game-Css\\SimpleSnake\\SimpleSnake.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

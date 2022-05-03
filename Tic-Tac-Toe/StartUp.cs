@@ -2,7 +2,7 @@
 
 namespace Tic_Tac_Toe
 {
-    class Program
+    class StartUp
     {
         static void Main(string[] args)
         {
