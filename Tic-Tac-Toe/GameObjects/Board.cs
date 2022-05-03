@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Tic_Tac_Toe.Enum;
 using Tic_Tac_Toe.Interfaces;
 
@@ -136,6 +137,30 @@ namespace Tic_Tac_Toe.GameObjects
             }
 
             return symbol;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for (int row = 0; row < this.Rows; row++)
+            {
+                for (int col = 0; col < this.Cols; col++)
+                {
+                    if (board[row, col] == Symbol.None)
+                    {
+                        sb.Append('\u2588');
+                    }
+                    else
+                    {
+                        sb.Append(board[row, col]);
+                    }
+                }
+
+                sb.AppendLine();
+            }
+
+            return sb.ToString();
         }
     }
 }
