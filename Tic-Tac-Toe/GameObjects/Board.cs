@@ -23,8 +23,8 @@ namespace Tic_Tac_Toe.GameObjects
             board = new Symbol[rows, cols];
         }
 
-        public int Rows { get; set; }
-        public int Cols { get; set; }
+        public int Rows { get; }
+        public int Cols { get; }
         public Symbol[,] BoardState => board;
 
         public bool IsFull()

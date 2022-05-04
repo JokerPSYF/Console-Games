@@ -7,6 +7,10 @@ namespace Tic_Tac_Toe.Interfaces
 {
     public interface IBoard
     {
+        public int Rows { get; }
+
+        public int Cols { get; }
+        
         bool IsFull();
 
         void PlaceSymbol(Index index, Symbol symbol);

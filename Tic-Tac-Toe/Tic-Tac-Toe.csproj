@@ -6,4 +6,8 @@
     <RootNamespace>Tic_Tac_Toe</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Players\" />
+  </ItemGroup>
+
 </Project>
