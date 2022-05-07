@@ -21,7 +21,7 @@ namespace Tic_Tac_Toe.Players
         {
             Index bestMove = null;
             int bestMoveValue = -1000;
-            List<Index> moves = board.GetEmptyPositions().ToList();
+            var moves = board.GetEmptyPositions();
 
             foreach (var move in moves)
             {
@@ -33,10 +33,9 @@ namespace Tic_Tac_Toe.Players
                     bestMove = move;
                     bestMoveValue = value;
                 }
-
             }
 
-            return null;
+            return bestMove;
         }
 
         private int MiniMax(IBoard board, Symbol player, Symbol currPlayer)

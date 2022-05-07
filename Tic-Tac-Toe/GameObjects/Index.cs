@@ -13,7 +13,7 @@ namespace Tic_Tac_Toe.GameObjects
         
         public Index(string info)
         {
-            int[] rowCol = info.Split(',', StringSplitOptions.RemoveEmptyEntries)
+            int[] rowCol = info.Split(new char[] {',', '.'}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse).ToArray();
             this.Row = rowCol[0];
             this.Col = rowCol[1];
@@ -33,7 +33,7 @@ namespace Tic_Tac_Toe.GameObjects
 
         public override string ToString()
         {
-            return $"{this.Row},{this.Col}";
+            return $"{this.Row}.{this.Col}";
         }
     }
 }

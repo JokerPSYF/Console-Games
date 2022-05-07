@@ -149,11 +149,11 @@ namespace Tic_Tac_Toe.GameObjects
                 {
                     if (board[row, col] == Symbol.None)
                     {
-                        sb.Append('\u2588');
+                        sb.Append('\u2588' + " ");
                     }
                     else
                     {
-                        sb.Append(board[row, col]);
+                        sb.Append(board[row, col] + " ");
                     }
                 }
 

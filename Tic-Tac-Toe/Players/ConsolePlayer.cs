@@ -11,7 +11,7 @@ namespace Tic_Tac_Toe.Players
 
         public Index Play(IBoard board, Symbol symbol)
         {
-            Console.Clear();
+            //Console.Clear();
             Index position;
 
             while (true)
