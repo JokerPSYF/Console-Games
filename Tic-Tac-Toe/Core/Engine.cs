@@ -15,6 +15,7 @@ namespace Tic_Tac_Toe.Core
             int select = ShowMenu();
             while (true)
             {
+                Console.Clear();
                 switch (select)
                 {
                     case 1:
@@ -154,6 +155,8 @@ namespace Tic_Tac_Toe.Core
 
             while (!wlogic.IsGameOver(board))
             {
+                Console.WriteLine(board.ToString());
+
                 Index move = currPlayer.Play(board, symbol);
                 board.PlaceSymbol(move, symbol);
 
@@ -168,8 +171,6 @@ namespace Tic_Tac_Toe.Core
                     symbol = Symbol.X;
                 }
                 Console.Clear();
-
-                Console.WriteLine(board.ToString());
             }
 
             var winner = wlogic.GetWinner(board);
