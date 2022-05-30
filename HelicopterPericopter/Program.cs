@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Text;
 using System.Threading;
-
+using System.Media;
+using Microsoft.Win32;
 
 namespace HelicopterPericopter
 {
@@ -9,10 +10,25 @@ namespace HelicopterPericopter
     {
         static void Main(string[] args)
         {
-            
-            int count = 0;
-            while (true)
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.CursorVisible = false;
+
+            if (OperatingSystem.IsWindows())
             {
+                // player = music player
+                var player = new SoundPlayer();
+                player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\Helikopter.wav";
+                player.Load();
+                player.PlayLooping();
+            }
+
+            int count = 0;
+            while (!Console.KeyAvailable)
+            {
+
+
                 Thread.Sleep(100);
                 Console.Clear();
                 string a = @"===============^ ==    --    ";
@@ -21,7 +37,7 @@ namespace HelicopterPericopter
                 {
                     count++;
                     Console.WriteLine(@" ===============^ ==    --    -");
-                   // Console.Write($"\r{a}", b);
+                    // Console.Write($"\r{a}", b);
                     Console.WriteLine(@"                ^              ");
                     Console.WriteLine(@" ''|        /--|||----------\");
                     Console.WriteLine(@"==<0>=======|      [ 0 ][ 0 ]\");
@@ -34,7 +50,7 @@ namespace HelicopterPericopter
                 }
                 else
                 {
-                    count++;     //     -    --    ==^================
+                    count++; //     -    --    ==^================
                     Console.WriteLine(@"  -    --    == ^================");
                     Console.WriteLine(@"                ^              ");
                     Console.WriteLine(@" ''|/       /--|||----------\");
@@ -46,10 +62,6 @@ namespace HelicopterPericopter
                     Console.WriteLine();
                     Console.WriteLine();
                 }
-            }
-            for (int i = 0; i < 5; ++i)
-            {
-                Console.Write("\r{0}%   ", i);
             }
         }
     }

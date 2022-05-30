@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2TKRX6Z529kRgrkJ3Mxnn6ugxh1OKekxzQdobSwuL4zNV7xDBCXZRaPI5tmQM1E9U2YMnzEL1sHI7RXi1K/3oQ==",
+  "dgSpecHash": "dgf57O19z3U417BZKaFXSmWx7OpeDS6E/oK5940SqXGbn+BzZ4cmqoRsxFNvHBNJ6xPGwk2Au9uTcku0oPgAwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Console-Games\\HelicopterPericopter\\HelicopterPericopter.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
