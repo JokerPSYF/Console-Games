@@ -28,16 +28,13 @@ namespace HelicopterPericopter
             while (!Console.KeyAvailable)
             {
 
-
                 Thread.Sleep(100);
                 Console.Clear();
-                string a = @"===============^ ==    --    ";
-                string b = @" -    --    == ^================";
+
                 if (count % 2 == 0)
                 {
                     count++;
                     Console.WriteLine(@" ===============^ ==    --    -");
-                    // Console.Write($"\r{a}", b);
                     Console.WriteLine(@"                ^              ");
                     Console.WriteLine(@" ''|        /--|||----------\");
                     Console.WriteLine(@"==<0>=======|      [ 0 ][ 0 ]\");
@@ -50,7 +47,7 @@ namespace HelicopterPericopter
                 }
                 else
                 {
-                    count++; //     -    --    ==^================
+                    count++;
                     Console.WriteLine(@"  -    --    == ^================");
                     Console.WriteLine(@"                ^              ");
                     Console.WriteLine(@" ''|/       /--|||----------\");
