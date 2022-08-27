@@ -15,7 +15,8 @@ namespace SimpleSnake.GameObjects
 
         private int leftX;
         private int topY;
-        private const string jsonPath = @"../../../HighScore/high-score.json";
+        private const string jsonPath =
+            @"C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\HighScore/high-score.json";
 
         public string PlayerName { get; private set; }
         public int PlayerHighScore { get; private set; }

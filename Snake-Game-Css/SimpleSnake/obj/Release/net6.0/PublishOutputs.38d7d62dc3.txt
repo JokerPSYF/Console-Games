@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\New folder\SimpleSnake.exe
+C:\Users\Admin\Desktop\New folder\SimpleSnake.dll
+C:\Users\Admin\Desktop\New folder\SimpleSnake.deps.json
+C:\Users\Admin\Desktop\New folder\SimpleSnake.runtimeconfig.json
+C:\Users\Admin\Desktop\New folder\SimpleSnake.pdb
+C:\Users\Admin\Desktop\New folder\Newtonsoft.Json.dll

@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\SimpleSnake.exe
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\SimpleSnake.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\SimpleSnake.deps.json
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\SimpleSnake.runtimeconfig.json
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\SimpleSnake.pdb
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Release\net6.0\publish\Newtonsoft.Json.dll
