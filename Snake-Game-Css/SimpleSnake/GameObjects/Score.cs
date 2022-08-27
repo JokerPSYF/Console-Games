@@ -51,7 +51,7 @@ namespace SimpleSnake.GameObjects
 
             HighScoreDTO newScore = new HighScoreDTO()
             {
-                Name = name,
+                Name = name.Trim(),
                 Score = snake.Score
             };
 
@@ -63,7 +63,7 @@ namespace SimpleSnake.GameObjects
         {
             var dto = JsonConvert.DeserializeObject<HighScoreDTO>(File.ReadAllText(jsonPath));
 
-            this.PlayerHighScore = dto.Score;
+            this.PlayerHighScore = (int)dto.Score;
             this.PlayerName = dto.Name;
         }
     }

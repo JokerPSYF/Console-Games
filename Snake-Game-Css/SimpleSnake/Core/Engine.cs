@@ -26,7 +26,7 @@ namespace SimpleSnake.Core
             this.score = new Score(snake, wall);
             sleepTime = 100;
             pointsOfDirections = new Point[4];
-            leftX = this.wall.LeftX + 1;
+            leftX = this.wall.LeftX + 3;
             topY = 0;
         }
 
@@ -131,9 +131,10 @@ namespace SimpleSnake.Core
 
         private void StopGame()
         {
-            Console.SetCursorPosition(this.wall.LeftX / 2, this.wall.TopY + 2);
+            Console.SetCursorPosition(leftX, topY + 9);
             Console.Write("Game Over!");
             Console.ReadKey(true);
+            Console.SetCursorPosition(this.wall.LeftX / 2, this.wall.TopY + 1);
             Environment.Exit(0);
         }
 

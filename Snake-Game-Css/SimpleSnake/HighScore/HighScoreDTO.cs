@@ -12,6 +12,6 @@ namespace SimpleSnake.HighScore
         public string Name { get; set; }
 
         [JsonProperty]
-        public int Score { get; set; }
+        public int? Score { get; set; }
     }
 }
