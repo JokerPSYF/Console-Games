@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "dgf57O19z3U417BZKaFXSmWx7OpeDS6E/oK5940SqXGbn+BzZ4cmqoRsxFNvHBNJ6xPGwk2Au9uTcku0oPgAwQ==",
+  "dgSpecHash": "UVIXzwXANo/GrFx2i6W5d8c2PoDM567+VF+t/7V3ZOfhfZEWgYbTuh7Hpyd0y2UPwcC1RVgQ5dV8GW6NU4J5zw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Console-Games\\HelicopterPericopter\\HelicopterPericopter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

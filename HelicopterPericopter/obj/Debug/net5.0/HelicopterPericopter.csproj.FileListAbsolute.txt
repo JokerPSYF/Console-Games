@@ -3,7 +3,6 @@ C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\HelicopterPericopter.runtimeconfig.json
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\HelicopterPericopter.runtimeconfig.dev.json
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\HelicopterPericopter.dll
-C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\ref\HelicopterPericopter.dll
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\HelicopterPericopter.pdb
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\bin\Debug\net5.0\System.Drawing.Common.dll
@@ -22,3 +21,4 @@ C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\obj\Debug\net5.0\
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\obj\Debug\net5.0\ref\HelicopterPericopter.dll
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\obj\Debug\net5.0\HelicopterPericopter.pdb
 C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\obj\Debug\net5.0\HelicopterPericopter.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Console-Games\HelicopterPericopter\obj\Debug\net5.0\refint\HelicopterPericopter.dll
