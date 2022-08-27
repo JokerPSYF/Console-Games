@@ -1,7 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
+using Newtonsoft.Json;
 using SimpleSnake.Enums;
 using SimpleSnake.GameObjects;
+using SimpleSnake.HighScore;
 
 namespace SimpleSnake.Core
 {
@@ -10,15 +13,21 @@ namespace SimpleSnake.Core
         private Wall wall;
         private Snake snake;
         private Point[] pointsOfDirections;
+        private readonly Score score;
         private double sleepTime;
         private Direction direction;
+        private int leftX;
+        private int topY;
 
         public Engine(Wall wall, Snake snake)
         {
             this.wall = wall;
             this.snake = snake;
+            this.score = new Score(snake, wall);
             sleepTime = 100;
             pointsOfDirections = new Point[4];
+            leftX = this.wall.LeftX + 1;
+            topY = 0;
         }
 
         private void CreateDirections()
@@ -35,7 +44,7 @@ namespace SimpleSnake.Core
 
             while (true)
             {
-                ShowScore();
+                score.ShowScore();
                 if (Console.KeyAvailable)
                 {
                     GetNextDirections();
@@ -45,6 +54,10 @@ namespace SimpleSnake.Core
 
                 if (!isMoving)
                 {
+                    if (score.IsNewHighScore(snake.Score))
+                    {
+                        score.RegisterNewHighScore();
+                    }
                     AskUserForRestart();
                 }
 
@@ -87,7 +100,7 @@ namespace SimpleSnake.Core
 
                 case ConsoleKey.DownArrow:
                 case ConsoleKey.S:
-                    if (direction != Direction.Up )
+                    if (direction != Direction.Up)
                     {
                         direction = Direction.Down;
                     }
@@ -124,10 +137,7 @@ namespace SimpleSnake.Core
             Environment.Exit(0);
         }
 
-        private void ShowScore()
-        {
-            int leftX = this.wall.LeftX + 3;
-            int topY = 1;
+        public int GetScore() => snake.Score;
 
     }
 }

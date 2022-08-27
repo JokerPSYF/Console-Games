@@ -26,3 +26,5 @@ C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\n
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\netcoreapp3.1\SimpleSnake.dll
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\netcoreapp3.1\SimpleSnake.pdb
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\netcoreapp3.1\SimpleSnake.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\netcoreapp3.1\SimpleSnake.csproj.CopyComplete
