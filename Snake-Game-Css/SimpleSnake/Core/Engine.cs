@@ -99,10 +99,7 @@ namespace SimpleSnake.Core
 
         private void AskUserForRestart()
         {
-            int leftX = this.wall.LeftX + 1;
-            int topY = 3;
-
-            Console.SetCursorPosition(leftX, topY);
+            Console.SetCursorPosition(leftX, topY + 7);
             Console.Write("Would you like to continue? y/n");
 
             ConsoleKeyInfo input = Console.ReadKey(true);
@@ -132,8 +129,5 @@ namespace SimpleSnake.Core
             int leftX = this.wall.LeftX + 3;
             int topY = 1;
 
-            Console.SetCursorPosition(leftX, topY);
-            Console.Write($"Your Score: {snake.Score}");
-        }
     }
 }
