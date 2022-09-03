@@ -6,24 +6,29 @@ namespace SimpleSnake.GameObjects
 {
     public class Snake
     {
-        private const char bodySymbol = Characters.bodySymbol; // classic ball
-        private const char snakeSymbol = Characters.snakeSymbol; // smileyface
-        private const char verticalSymbol = Characters.verticalSymbol; // vertical
-        private const char horizontalSymbol = Characters.horizontalSymbol; // horizontal
+        private const char bodySymbol = Characters.BodySymbol; // classic ball
+        private const char snakeSymbol = Characters.SnakeSymbol; // smileyface
+        private const char verticalSymbol = Characters.VerticalSymbol; // vertical
+        private const char horizontalSymbol = Characters.HorizontalSymbol; // horizontal
+        public const char downRightSymbol = Characters.DownRightSymbol; // down right
+        public const char downLeftSymbol = Characters.DownLeftSymbol; // down left
+        public const char UpLeftSymbol = Characters.UpLeftSymbol; // up left
+        public const char UpRightSymbol = Characters.UpRightSymbol; // up right
 
         private Wall wall;
-        private Queue<Point> snakeElements;
+        private List<Point> snakeElements;
         private Point snakeHead;
         private Food[] foods;
         private int foodIndex;
-        private int nextLeftX; 
+        private int nextLeftX;
         private int nextTopY;
         private Food food;
+        private char currChar;
 
         public Snake(Wall wall)
         {
             this.wall = wall;
-            this.snakeElements = new Queue<Point>();
+            this.snakeElements = new List<Point>();
             this.foods = new Food[3];
             this.foodIndex = RandomFoodNumber;
             this.GetsFoods();
@@ -54,9 +59,11 @@ namespace SimpleSnake.GameObjects
 
             if (this.wall.IsPointOfWall(snakeHead)) return false;
 
-            this.snakeElements.Enqueue(oldHead);
+            this.snakeElements.Add(oldHead);
 
-            oldHead.Draw(direction.TopY == 0 ? horizontalSymbol : verticalSymbol);
+            this.currChar = ChangeSymbol(oldHead, this.snakeHead, snakeElements[snakeElements.Count - 2]);
+
+            oldHead.Draw(this.currChar);
 
             this.snakeHead.Draw(snakeSymbol);
 
@@ -65,7 +72,8 @@ namespace SimpleSnake.GameObjects
                 this.Eat(direction, currSnakeHead);
             }
 
-            Point snakeTail = snakeElements.Dequeue();
+            Point snakeTail = snakeElements.First();
+            snakeElements.Remove(snakeElements.First());
 
             snakeTail.Draw(' ');
 
@@ -73,10 +81,10 @@ namespace SimpleSnake.GameObjects
         }
         private void CreateSnake()
         {
-           
+
             for (int topY = 1; topY <= 5; topY++)
             {
-                snakeElements.Enqueue(new Point(2, topY));
+                snakeElements.Add(new Point(2, topY));
             }
             snakeHead = new Point(2, 6);
         }
@@ -100,7 +108,7 @@ namespace SimpleSnake.GameObjects
 
             for (int i = 0; i < length; i++)
             {
-                this.snakeElements.Enqueue(new Point(nextLeftX, nextTopY));
+                this.snakeElements.Add(new Point(nextLeftX, nextTopY));
                 GetNextPoint(direction, currSnakeHead);
             }
 
@@ -109,6 +117,89 @@ namespace SimpleSnake.GameObjects
             this.foodIndex = this.RandomFoodNumber;
             this.food = this.foods[foodIndex];
             food.SetRandomPosition(this.snakeElements);
+        }
+
+        private char ChangeSymbol(Point oldDirection, Point newDirecrion, Point snakeElement)
+        {
+            char symbol = this.currChar;
+            while (oldDirection.TopY == snakeElement.TopY && oldDirection.LeftX == snakeElement.LeftX)
+            {
+                int index = this.snakeElements.IndexOf(snakeElement);
+                snakeElement = this.snakeElements[index - 1];
+            }
+            //Check if were going UP
+            if (snakeElement.TopY > oldDirection.TopY)
+            {
+                //Check if we going right
+                if (oldDirection.LeftX < newDirecrion.LeftX)
+                {
+                    symbol = Characters.DownRightSymbol;
+                }
+                //Check if we going left
+                else if (oldDirection.LeftX > newDirecrion.LeftX)
+                {
+                    symbol = Characters.DownLeftSymbol;
+                }
+                else
+                {
+                    symbol = Characters.VerticalSymbol;
+                }
+            }
+            //Check if were going down
+            else if (snakeElement.TopY < oldDirection.TopY)
+            {
+                //Check if we going right
+                if (oldDirection.LeftX < newDirecrion.LeftX)
+                {
+                    symbol = Characters.UpRightSymbol;
+                }
+                //Check if we going left
+                else if (oldDirection.LeftX > newDirecrion.LeftX)
+                {
+                    symbol = Characters.UpLeftSymbol;
+                }
+                else
+                {
+                    symbol = Characters.VerticalSymbol;
+                }
+            }
+            //Check if were going left
+            else if (snakeElement.LeftX > oldDirection.LeftX)
+            {
+                //Check if we going up
+                if (oldDirection.TopY > newDirecrion.TopY)
+                {
+                    symbol = Characters.UpRightSymbol;
+                }
+                //Check if we going down
+                else if (oldDirection.TopY < newDirecrion.TopY)
+                {
+                    symbol = Characters.DownRightSymbol;
+                }
+                else
+                {
+                    symbol = Characters.HorizontalSymbol;
+                }
+            }
+            //Check if were going right
+            else if (snakeElement.LeftX < oldDirection.LeftX)
+            {
+                //Check if we going up
+                if (oldDirection.TopY > newDirecrion.TopY)
+                {
+                    symbol = Characters.UpLeftSymbol;
+                }
+                //Check if we going down
+                else if (oldDirection.TopY < newDirecrion.TopY)
+                {
+                    symbol = Characters.DownLeftSymbol;
+                }
+                else
+                {
+                    symbol = Characters.HorizontalSymbol;
+                }
+            }
+            return symbol;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace SimpleSnake.GameObjects
 
         public int FoodPoints { get; private set; }
 
-        public void SetRandomPosition(Queue<Point> snakeElements)
+        public void SetRandomPosition(List<Point> snakeElements)
         {
             this.LeftX = random.Next(2, wall.LeftX - 2);
             this.TopY = random.Next(2, wall.TopY - 2);

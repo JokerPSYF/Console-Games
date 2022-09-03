@@ -32,9 +32,13 @@ namespace SimpleSnake.Core
 
         private void CreateDirections()
         {
+            //right
             this.pointsOfDirections[0] = new Point(1, 0);
+            //left
             this.pointsOfDirections[1] = new Point(-1, 0);
+            //down
             this.pointsOfDirections[2] = new Point(0, 1);
+            //up
             this.pointsOfDirections[3] = new Point(0, -1);
         }
 
