@@ -25,7 +25,5 @@ namespace SimpleSnake.GameObjects
             Console.Write(symbol);
 
         }
-
-        
     }
 }
