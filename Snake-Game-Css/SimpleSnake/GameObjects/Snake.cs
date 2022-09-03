@@ -23,7 +23,6 @@ namespace SimpleSnake.GameObjects
         private int nextLeftX;
         private int nextTopY;
         private Food food;
-        private char currChar;
 
         public Snake(Wall wall)
         {
