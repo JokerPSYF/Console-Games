@@ -60,9 +60,9 @@ namespace SimpleSnake.GameObjects
 
             this.snakeElements.Add(oldHead);
 
-            this.currChar = ChangeSymbol(oldHead, this.snakeHead, snakeElements[snakeElements.Count - 2]);
+            char currChar = ChangeSymbol(oldHead, this.snakeHead, snakeElements[snakeElements.Count - 2]);
 
-            oldHead.Draw(this.currChar);
+            oldHead.Draw(currChar);
 
             this.snakeHead.Draw(snakeSymbol);
 
@@ -120,7 +120,7 @@ namespace SimpleSnake.GameObjects
 
         private char ChangeSymbol(Point oldDirection, Point newDirecrion, Point snakeElement)
         {
-            char symbol = this.currChar;
+            char symbol = ' ';
             while (oldDirection.TopY == snakeElement.TopY && oldDirection.LeftX == snakeElement.LeftX)
             {
                 int index = this.snakeElements.IndexOf(snakeElement);
