@@ -6,7 +6,7 @@ namespace SimpleSnake.GameObjects
 {
     public class Snake
     {
-
+ 
         private Wall wall;
         private List<Point> snakeElements;
         private Point snakeHead;
@@ -56,7 +56,7 @@ namespace SimpleSnake.GameObjects
 
             oldHead.Draw(currChar);
 
-            this.snakeHead.Draw(snakeSymbol);
+            this.snakeHead.Draw(Characters.SnakeSymbol);
 
             if (food.IsFoodPoint(snakeHead))
             {
