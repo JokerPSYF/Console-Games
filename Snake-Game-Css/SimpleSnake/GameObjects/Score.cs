@@ -50,10 +50,15 @@ namespace SimpleSnake.GameObjects
             Console.SetCursorPosition(leftX, topY + 4);
             Console.Write($"Congratulation, that's new high score!!! Write your name:");
             string name = Console.ReadLine();
+            if (name.Length > 15)
+            {
+                name = name.Substring(0, 15);
+            }
+            name = name.Trim();
 
             HighScoreDTO newScore = new HighScoreDTO()
             {
-                Name = name.Trim(),
+                Name = name,
                 Score = snake.Score
             };
 
