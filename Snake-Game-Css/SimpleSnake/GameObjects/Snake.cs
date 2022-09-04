@@ -6,14 +6,6 @@ namespace SimpleSnake.GameObjects
 {
     public class Snake
     {
-        private const char bodySymbol = Characters.BodySymbol; // classic ball
-        private const char snakeSymbol = Characters.SnakeSymbol; // smileyface
-        private const char verticalSymbol = Characters.VerticalSymbol; // vertical
-        private const char horizontalSymbol = Characters.HorizontalSymbol; // horizontal
-        public const char downRightSymbol = Characters.DownRightSymbol; // down right
-        public const char downLeftSymbol = Characters.DownLeftSymbol; // down left
-        public const char UpLeftSymbol = Characters.UpLeftSymbol; // up left
-        public const char UpRightSymbol = Characters.UpRightSymbol; // up right
 
         private Wall wall;
         private List<Point> snakeElements;
