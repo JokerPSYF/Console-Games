@@ -15,3 +15,10 @@ C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\n
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\net6.0\SimpleSnake.pdb
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\net6.0\SimpleSnake.genruntimeconfig.cache
 C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\obj\Debug\net6.0\ref\SimpleSnake.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Admin\source\repos\Console-Games\Snake-Game-Css\SimpleSnake\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

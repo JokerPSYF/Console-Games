@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using SimpleSnake.Enums;
 using SimpleSnake.GameObjects;
 using SimpleSnake.HighScore;
+using SimpleSnake.Sounds;
 
 namespace SimpleSnake.Core
 {
@@ -116,6 +117,7 @@ namespace SimpleSnake.Core
 
         private void AskUserForRestart()
         {
+            MusicPlayer.Instance.Stop();
             Console.SetCursorPosition(leftX, topY + 7);
             Console.Write("Would you like to continue? y/n");
 

@@ -1,6 +1,6 @@
 ﻿namespace SimpleSnake.GameObjects
 {
-    public class Characters
+    public static class Characters
     {
         public const char BodySymbol = '\u25CF'; // classic ball
         public const char SnakeSymbol = '\u263A'; // smileyface
